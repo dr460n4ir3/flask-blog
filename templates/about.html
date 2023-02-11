@@ -1,21 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-</head>
-<body>
-    <h1>This is the about as page</h1>
-    <p>made on 2/5/23 at 1:17am EST</p>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/portfolio">Portfolio</a></li>
-            <li><a href="/resume">Resume</a></li>
-            <li><a href="/contact">Contact Me</a></li>
-        </ul>
-</body>
-</html>
+{% extends "index.html" %}
+{% block title %}About{% endblock %}
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    .important { color: #336699; }
+  </style>
+{% endblock %}
+{% block content %}
+  <h1>Index</h1>
+  <p class="important">
+    At Error-404 Web Development Agency LLC, we are a team of dedicated web development experts committed to delivering exceptional online experiences for businesses of all sizes. With years of experience in the industry, our talented developers are equipped with the latest knowledge and tools to bring your vision to life. Whether you are looking to revamp your website, build a new e-commerce platform, or create a custom web application, we have the skills and expertise to bring your ideas to reality. Our goal is to provide personalized solutions that are not only visually appealing but also efficient, user-friendly, and scalable. Our passion for technology and design combined with our attention to detail ensures that every project is delivered on time and within budget. Let us help you elevate your online presence and take your business to the next level. Contact us today to learn more about our services.
+    </p>
+    
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+{% block title %}Portfolio{% endblock %}
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    .important { color: #336699; }
+  </style>
+{% endblock %}
+{% block content %}
+  <h1>Index</h1>
+  <!-- create a card -->
+    <div class="card">
+        <img src="/static/error-404 logo.png" alt="Avatar" style="width:24%">
+        <div class="container">
+        <h4><b>Stephen McNeilly</b></h4> 
+        <p>Architect & Engineer</p> 
+        </div>
+    </div>
+  <p class="important">Thanks for stopping by!</p>
+{% endblock %}
